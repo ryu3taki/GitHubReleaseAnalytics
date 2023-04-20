@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GitHub Relaese Analytics</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div>
+            <h1>GitHub Release Analytics</h1>
+            <p>GitHubのリポジトリURLを入れるとReleasesのダウンロード数を表示します。</p>
+            <form onsubmit="onClickButton(); return false">
+                <label>GitHub Repository URL：<input id="repositoryURL" type="url" size="40" value=""/></label>
+            </form>
+        </div>
+        <div id="Result">
+            結果がここに表示されます。
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="Analyze.js"></script>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
